@@ -7,8 +7,8 @@ services:
 
 script:
   - export SHORT_SHA="${TRAVIS_COMMIT:0:7}"
-  - docker build -t kogosoftware/kogo-node-base-build:$SHORT_SHA .
+  - docker build -t kogosoftware/kogo-node8-base-build:$SHORT_SHA .
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - docker push kogosoftware/kogo-node-base-build:$SHORT_SHA
-  - docker tag kogosoftware/kogo-node-base-build:$SHORT_SHA kogosoftware/kogo-node-base-build:latest
-  - docker push kogosoftware/kogo-node-base-build:latest
+  - docker push kogosoftware/kogo-node8-base-build:$SHORT_SHA
+  - docker tag kogosoftware/kogo-node8-base-build:$SHORT_SHA kogosoftware/kogo-node8-base-build:latest
+  - docker push kogosoftware/kogo-node8-base-build:latest
