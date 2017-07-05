@@ -5,6 +5,7 @@ language: generic
 services:
   - docker
 
+
 script:
   - export SHORT_SHA="${TRAVIS_COMMIT:0:7}"
   - docker build -t kogosoftware/kogo-node8-base-build:$SHORT_SHA .
