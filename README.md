@@ -1,4 +1,4 @@
-# kogo-node-base-build
+# kogo-node-base-build [![Build Status][travis-image]][travis-url]
 > A base image with node for building things.
 
 ## Installed Packages
@@ -30,3 +30,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ``````
+
+[travis-url]: https://travis-ci.org/kogosoftwarellc/docker-kogo-node-base-build
+[travis-image]: http://img.shields.io/travis/kogosoftwarellc/docker-kogo-node-base-build.svg
